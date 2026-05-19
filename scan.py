@@ -54,8 +54,11 @@ def build_html(results):
     groups = []
     for f in ALPHABET_LIST:
         good = sum(1 for s in ALPHABET_LIST if results.get(f, {}).get(s) == 200)
-        bad  = sum(1 for s in ALPHABET_LIST if results.get(f, {}).get(s) not in (200, None, 0) or results.get(f, {}).get(s) == 0)
-        total_checked = len(results.get(f, {}))
+        # all_slots: (href, label, is_working)
+        all_slots = [
+            (BASE + f + s, f + s, results.get(f, {}).get(s) == 200)
+            for s in ALPHABET_LIST
+        ]
         links = [(BASE + f + s, f + s) for s in ALPHABET_LIST if results.get(f, {}).get(s) == 200]
 
         if good == 62:
@@ -71,6 +74,7 @@ def build_html(results):
             "count": f"{good}/62",
             "good": good,
             "links": links,
+            "all_slots": all_slots,
         })
 
     # Sort: partial first (open), then full, then dead
@@ -90,13 +94,15 @@ def build_html(results):
         badge_class = "badge-partial" if g["badge_type"] == "partial" else "badge-full" if g["badge_type"] == "full" else "badge-dead"
         links_html = "".join(
             f'        <a href="{href}" target="_blank" rel="noopener">{label}</a>\n'
-            for href, label in g["links"]
+            if working else
+            f'        <span class="dead" title="Not working">{label}</span>\n'
+            for href, label, working in g["all_slots"]
         )
         return f'''    <details class="prefix-group"{open_attr} data-prefix="{g["prefix"]}">
       <summary>
         <span class="badge {badge_class}">{g["count"]}</span>
         <span class="prefix-label">Prefix <code>{g["prefix"]}</code></span>
-        <span class="link-count">{g["good"]} links</span>
+        <span class="link-count">{g["good"]} working / {62 - g["good"]} dead</span>
       </summary>
       <div class="links-grid">
 {links_html}      </div>
@@ -184,8 +190,9 @@ def build_html(results):
   .prefix-label code {{ font-family:var(--mono); font-weight:700; color:#e8f0ff; font-size:.95rem; }}
   .link-count {{ font-family:var(--mono); font-size:.72rem; color:var(--muted); }}
   .links-grid {{ padding:4px 16px 14px; display:grid; grid-template-columns:repeat(auto-fill,minmax(72px,1fr)); gap:5px; }}
-  .links-grid a {{ padding:6px 8px; background:var(--surface2); border:1px solid var(--border); border-radius:6px; text-decoration:none; color:var(--accent); font-family:var(--mono); font-size:.78rem; text-align:center; transition:background .12s,border-color .12s,color .12s,transform .1s; display:block; }}
-  .links-grid a:hover {{ background:rgba(79,156,249,.15); border-color:rgba(79,156,249,.4); color:#90c9ff; transform:translateY(-1px); }}
+  .links-grid a {{ padding:6px 8px; background:rgba(34,197,94,.12); border:1px solid rgba(34,197,94,.35); border-radius:6px; text-decoration:none; color:#4ade80; font-family:var(--mono); font-size:.78rem; text-align:center; transition:background .12s,border-color .12s,color .12s,transform .1s; display:block; }}
+  .links-grid a:hover {{ background:rgba(34,197,94,.25); border-color:rgba(34,197,94,.6); color:#86efac; transform:translateY(-1px); }}
+  .links-grid span.dead {{ padding:6px 8px; background:rgba(239,68,68,.08); border:1px solid rgba(239,68,68,.25); border-radius:6px; color:#f87171; font-family:var(--mono); font-size:.78rem; text-align:center; display:block; opacity:.7; cursor:not-allowed; }}
   footer {{ border-top:1px solid var(--border); padding:1.5rem 2rem; text-align:center; font-size:.75rem; color:var(--muted); max-width:1200px; margin:2rem auto 0; }}
   #no-results {{ display:none; text-align:center; padding:3rem; color:var(--muted); font-size:.9rem; }}
   @media(max-width:640px) {{ header{{padding:1.5rem 1rem;}} main{{padding:1.5rem 1rem;}} .callouts{{padding:0 1rem;}} .links-grid{{grid-template-columns:repeat(auto-fill,minmax(60px,1fr));}} }}

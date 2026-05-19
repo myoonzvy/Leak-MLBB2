@@ -60,8 +60,9 @@
   .prefix-label code { font-family:var(--mono); font-weight:700; color:#e8f0ff; font-size:.95rem; }
   .link-count { font-family:var(--mono); font-size:.72rem; color:var(--muted); }
   .links-grid { padding:4px 16px 14px; display:grid; grid-template-columns:repeat(auto-fill,minmax(72px,1fr)); gap:5px; }
-  .links-grid a { padding:6px 8px; background:var(--surface2); border:1px solid var(--border); border-radius:6px; text-decoration:none; color:var(--accent); font-family:var(--mono); font-size:.78rem; text-align:center; transition:background .12s,border-color .12s,color .12s,transform .1s; display:block; }
-  .links-grid a:hover { background:rgba(79,156,249,.15); border-color:rgba(79,156,249,.4); color:#90c9ff; transform:translateY(-1px); }
+  .links-grid a { padding:6px 8px; background:rgba(34,197,94,.12); border:1px solid rgba(34,197,94,.35); border-radius:6px; text-decoration:none; color:#4ade80; font-family:var(--mono); font-size:.78rem; text-align:center; transition:background .12s,border-color .12s,color .12s,transform .1s; display:block; }
+  .links-grid a:hover { background:rgba(34,197,94,.25); border-color:rgba(34,197,94,.6); color:#86efac; transform:translateY(-1px); }
+  .links-grid span.dead { padding:6px 8px; background:rgba(239,68,68,.08); border:1px solid rgba(239,68,68,.25); border-radius:6px; color:#f87171; font-family:var(--mono); font-size:.78rem; text-align:center; display:block; opacity:.7; cursor:not-allowed; }
   footer { border-top:1px solid var(--border); padding:1.5rem 2rem; text-align:center; font-size:.75rem; color:var(--muted); max-width:1200px; margin:2rem auto 0; }
   #no-results { display:none; text-align:center; padding:3rem; color:var(--muted); font-size:.9rem; }
   @media(max-width:640px) { header{padding:1.5rem 1rem;} main{padding:1.5rem 1rem;} .callouts{padding:0 1rem;} .links-grid{grid-template-columns:repeat(auto-fill,minmax(60px,1fr));} }
@@ -74,8 +75,8 @@
     <h1>Active Links &mdash; <span>5RV4??</span></h1>
     <div class="header-meta">
       <span>Base URL: <a href="https://survey.moontontech.net/t/5RV4" target="_blank" rel="noopener">survey.moontontech.net/t/5RV4</a></span>
-      <span class="stat-pill">&#10004; <span class="num">3,664</span>&nbsp;working out of 3,844 scanned</span>
-      <span class="updated-pill">&#128336; Last scan: 2026-05-19 09:49 UTC</span>
+      <span class="stat-pill">&#10004; <span class="num">3,590</span>&nbsp;working out of 3,844 scanned</span>
+      <span class="updated-pill">&#128336; Last scan: 2026-05-19 09:46 UTC</span>
     </div>
   </div>
 </header>
@@ -85,14 +86,14 @@
     <span class="callout-icon">&#9889;</span>
     <div>
       <div class="callout-title">Partial Prefixes (some broken)</div>
-      <code>H</code> &mdash; 61/62 &middot; <code>5</code> &mdash; 61/62 &middot; <code>8</code> &mdash; 8/62
+      <code>H</code> &mdash; 5/62 &middot; <code>Y</code> &mdash; 52/62 &middot; <code>5</code> &mdash; 61/62
     </div>
   </div>
   <div class="callout dead">
     <span class="callout-icon">&#10007;</span>
     <div>
       <div class="callout-title">Dead Prefixes (HTTP 500 / no response)</div>
-      <code>K</code>, <code>T</code>
+      <code>K</code>, <code>T</code>, <code>8</code>
     </div>
   </div>
 </div>
@@ -107,79 +108,151 @@
   <div class="section-label"><span class="dot"></span> Partial Prefixes &mdash; Expanded</div>
     <details class="prefix-group" open data-prefix="H">
       <summary>
-        <span class="badge badge-partial">61/62</span>
+        <span class="badge badge-partial">5/62</span>
         <span class="prefix-label">Prefix <code>H</code></span>
-        <span class="link-count">61 links</span>
+        <span class="link-count">5 working / 57 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Ha" target="_blank" rel="noopener">Ha</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hb" target="_blank" rel="noopener">Hb</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hc" target="_blank" rel="noopener">Hc</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hd" target="_blank" rel="noopener">Hd</a>
-        <a href="https://survey.moontontech.net/t/5RV4He" target="_blank" rel="noopener">He</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hf" target="_blank" rel="noopener">Hf</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hg" target="_blank" rel="noopener">Hg</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hh" target="_blank" rel="noopener">Hh</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hi" target="_blank" rel="noopener">Hi</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hj" target="_blank" rel="noopener">Hj</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hk" target="_blank" rel="noopener">Hk</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hl" target="_blank" rel="noopener">Hl</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hm" target="_blank" rel="noopener">Hm</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hn" target="_blank" rel="noopener">Hn</a>
-        <a href="https://survey.moontontech.net/t/5RV4Ho" target="_blank" rel="noopener">Ho</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hp" target="_blank" rel="noopener">Hp</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hq" target="_blank" rel="noopener">Hq</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hs" target="_blank" rel="noopener">Hs</a>
-        <a href="https://survey.moontontech.net/t/5RV4Ht" target="_blank" rel="noopener">Ht</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hu" target="_blank" rel="noopener">Hu</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hv" target="_blank" rel="noopener">Hv</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hw" target="_blank" rel="noopener">Hw</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hx" target="_blank" rel="noopener">Hx</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hy" target="_blank" rel="noopener">Hy</a>
-        <a href="https://survey.moontontech.net/t/5RV4Hz" target="_blank" rel="noopener">Hz</a>
+        <span class="dead" title="Not working">Hb</span>
+        <span class="dead" title="Not working">Hc</span>
+        <span class="dead" title="Not working">Hd</span>
+        <span class="dead" title="Not working">He</span>
+        <span class="dead" title="Not working">Hf</span>
+        <span class="dead" title="Not working">Hg</span>
+        <span class="dead" title="Not working">Hh</span>
+        <span class="dead" title="Not working">Hi</span>
+        <span class="dead" title="Not working">Hj</span>
+        <span class="dead" title="Not working">Hk</span>
+        <span class="dead" title="Not working">Hl</span>
+        <span class="dead" title="Not working">Hm</span>
+        <span class="dead" title="Not working">Hn</span>
+        <span class="dead" title="Not working">Ho</span>
+        <span class="dead" title="Not working">Hp</span>
+        <span class="dead" title="Not working">Hq</span>
+        <span class="dead" title="Not working">Hr</span>
+        <span class="dead" title="Not working">Hs</span>
+        <span class="dead" title="Not working">Ht</span>
+        <span class="dead" title="Not working">Hu</span>
+        <span class="dead" title="Not working">Hv</span>
+        <span class="dead" title="Not working">Hw</span>
+        <span class="dead" title="Not working">Hx</span>
+        <span class="dead" title="Not working">Hy</span>
+        <span class="dead" title="Not working">Hz</span>
         <a href="https://survey.moontontech.net/t/5RV4HA" target="_blank" rel="noopener">HA</a>
-        <a href="https://survey.moontontech.net/t/5RV4HB" target="_blank" rel="noopener">HB</a>
-        <a href="https://survey.moontontech.net/t/5RV4HC" target="_blank" rel="noopener">HC</a>
-        <a href="https://survey.moontontech.net/t/5RV4HD" target="_blank" rel="noopener">HD</a>
-        <a href="https://survey.moontontech.net/t/5RV4HE" target="_blank" rel="noopener">HE</a>
-        <a href="https://survey.moontontech.net/t/5RV4HF" target="_blank" rel="noopener">HF</a>
-        <a href="https://survey.moontontech.net/t/5RV4HG" target="_blank" rel="noopener">HG</a>
-        <a href="https://survey.moontontech.net/t/5RV4HH" target="_blank" rel="noopener">HH</a>
-        <a href="https://survey.moontontech.net/t/5RV4HI" target="_blank" rel="noopener">HI</a>
-        <a href="https://survey.moontontech.net/t/5RV4HJ" target="_blank" rel="noopener">HJ</a>
-        <a href="https://survey.moontontech.net/t/5RV4HK" target="_blank" rel="noopener">HK</a>
-        <a href="https://survey.moontontech.net/t/5RV4HL" target="_blank" rel="noopener">HL</a>
-        <a href="https://survey.moontontech.net/t/5RV4HM" target="_blank" rel="noopener">HM</a>
-        <a href="https://survey.moontontech.net/t/5RV4HN" target="_blank" rel="noopener">HN</a>
-        <a href="https://survey.moontontech.net/t/5RV4HO" target="_blank" rel="noopener">HO</a>
-        <a href="https://survey.moontontech.net/t/5RV4HP" target="_blank" rel="noopener">HP</a>
-        <a href="https://survey.moontontech.net/t/5RV4HQ" target="_blank" rel="noopener">HQ</a>
+        <span class="dead" title="Not working">HB</span>
+        <span class="dead" title="Not working">HC</span>
+        <span class="dead" title="Not working">HD</span>
+        <span class="dead" title="Not working">HE</span>
+        <span class="dead" title="Not working">HF</span>
+        <span class="dead" title="Not working">HG</span>
+        <span class="dead" title="Not working">HH</span>
+        <span class="dead" title="Not working">HI</span>
+        <span class="dead" title="Not working">HJ</span>
+        <span class="dead" title="Not working">HK</span>
+        <span class="dead" title="Not working">HL</span>
+        <span class="dead" title="Not working">HM</span>
+        <span class="dead" title="Not working">HN</span>
+        <span class="dead" title="Not working">HO</span>
+        <span class="dead" title="Not working">HP</span>
+        <span class="dead" title="Not working">HQ</span>
         <a href="https://survey.moontontech.net/t/5RV4HR" target="_blank" rel="noopener">HR</a>
-        <a href="https://survey.moontontech.net/t/5RV4HS" target="_blank" rel="noopener">HS</a>
-        <a href="https://survey.moontontech.net/t/5RV4HT" target="_blank" rel="noopener">HT</a>
-        <a href="https://survey.moontontech.net/t/5RV4HU" target="_blank" rel="noopener">HU</a>
+        <span class="dead" title="Not working">HS</span>
+        <span class="dead" title="Not working">HT</span>
+        <span class="dead" title="Not working">HU</span>
         <a href="https://survey.moontontech.net/t/5RV4HV" target="_blank" rel="noopener">HV</a>
-        <a href="https://survey.moontontech.net/t/5RV4HW" target="_blank" rel="noopener">HW</a>
-        <a href="https://survey.moontontech.net/t/5RV4HX" target="_blank" rel="noopener">HX</a>
-        <a href="https://survey.moontontech.net/t/5RV4HY" target="_blank" rel="noopener">HY</a>
-        <a href="https://survey.moontontech.net/t/5RV4HZ" target="_blank" rel="noopener">HZ</a>
-        <a href="https://survey.moontontech.net/t/5RV4H0" target="_blank" rel="noopener">H0</a>
-        <a href="https://survey.moontontech.net/t/5RV4H1" target="_blank" rel="noopener">H1</a>
-        <a href="https://survey.moontontech.net/t/5RV4H2" target="_blank" rel="noopener">H2</a>
-        <a href="https://survey.moontontech.net/t/5RV4H3" target="_blank" rel="noopener">H3</a>
-        <a href="https://survey.moontontech.net/t/5RV4H4" target="_blank" rel="noopener">H4</a>
+        <span class="dead" title="Not working">HW</span>
+        <span class="dead" title="Not working">HX</span>
+        <span class="dead" title="Not working">HY</span>
+        <span class="dead" title="Not working">HZ</span>
+        <span class="dead" title="Not working">H0</span>
+        <span class="dead" title="Not working">H1</span>
+        <span class="dead" title="Not working">H2</span>
+        <span class="dead" title="Not working">H3</span>
+        <span class="dead" title="Not working">H4</span>
         <a href="https://survey.moontontech.net/t/5RV4H5" target="_blank" rel="noopener">H5</a>
-        <a href="https://survey.moontontech.net/t/5RV4H6" target="_blank" rel="noopener">H6</a>
-        <a href="https://survey.moontontech.net/t/5RV4H7" target="_blank" rel="noopener">H7</a>
-        <a href="https://survey.moontontech.net/t/5RV4H8" target="_blank" rel="noopener">H8</a>
-        <a href="https://survey.moontontech.net/t/5RV4H9" target="_blank" rel="noopener">H9</a>
+        <span class="dead" title="Not working">H6</span>
+        <span class="dead" title="Not working">H7</span>
+        <span class="dead" title="Not working">H8</span>
+        <span class="dead" title="Not working">H9</span>
+      </div>
+    </details>
+    <details class="prefix-group" open data-prefix="Y">
+      <summary>
+        <span class="badge badge-partial">52/62</span>
+        <span class="prefix-label">Prefix <code>Y</code></span>
+        <span class="link-count">52 working / 10 dead</span>
+      </summary>
+      <div class="links-grid">
+        <a href="https://survey.moontontech.net/t/5RV4Ya" target="_blank" rel="noopener">Ya</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yb" target="_blank" rel="noopener">Yb</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yc" target="_blank" rel="noopener">Yc</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yd" target="_blank" rel="noopener">Yd</a>
+        <a href="https://survey.moontontech.net/t/5RV4Ye" target="_blank" rel="noopener">Ye</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yf" target="_blank" rel="noopener">Yf</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yg" target="_blank" rel="noopener">Yg</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yh" target="_blank" rel="noopener">Yh</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yi" target="_blank" rel="noopener">Yi</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yj" target="_blank" rel="noopener">Yj</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yk" target="_blank" rel="noopener">Yk</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yl" target="_blank" rel="noopener">Yl</a>
+        <a href="https://survey.moontontech.net/t/5RV4Ym" target="_blank" rel="noopener">Ym</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yn" target="_blank" rel="noopener">Yn</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yo" target="_blank" rel="noopener">Yo</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yp" target="_blank" rel="noopener">Yp</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yq" target="_blank" rel="noopener">Yq</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yr" target="_blank" rel="noopener">Yr</a>
+        <a href="https://survey.moontontech.net/t/5RV4Ys" target="_blank" rel="noopener">Ys</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yt" target="_blank" rel="noopener">Yt</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yu" target="_blank" rel="noopener">Yu</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yv" target="_blank" rel="noopener">Yv</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yw" target="_blank" rel="noopener">Yw</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yx" target="_blank" rel="noopener">Yx</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yy" target="_blank" rel="noopener">Yy</a>
+        <a href="https://survey.moontontech.net/t/5RV4Yz" target="_blank" rel="noopener">Yz</a>
+        <a href="https://survey.moontontech.net/t/5RV4YA" target="_blank" rel="noopener">YA</a>
+        <a href="https://survey.moontontech.net/t/5RV4YB" target="_blank" rel="noopener">YB</a>
+        <a href="https://survey.moontontech.net/t/5RV4YC" target="_blank" rel="noopener">YC</a>
+        <a href="https://survey.moontontech.net/t/5RV4YD" target="_blank" rel="noopener">YD</a>
+        <a href="https://survey.moontontech.net/t/5RV4YE" target="_blank" rel="noopener">YE</a>
+        <a href="https://survey.moontontech.net/t/5RV4YF" target="_blank" rel="noopener">YF</a>
+        <a href="https://survey.moontontech.net/t/5RV4YG" target="_blank" rel="noopener">YG</a>
+        <a href="https://survey.moontontech.net/t/5RV4YH" target="_blank" rel="noopener">YH</a>
+        <a href="https://survey.moontontech.net/t/5RV4YI" target="_blank" rel="noopener">YI</a>
+        <a href="https://survey.moontontech.net/t/5RV4YJ" target="_blank" rel="noopener">YJ</a>
+        <a href="https://survey.moontontech.net/t/5RV4YK" target="_blank" rel="noopener">YK</a>
+        <a href="https://survey.moontontech.net/t/5RV4YL" target="_blank" rel="noopener">YL</a>
+        <span class="dead" title="Not working">YM</span>
+        <span class="dead" title="Not working">YN</span>
+        <span class="dead" title="Not working">YO</span>
+        <span class="dead" title="Not working">YP</span>
+        <span class="dead" title="Not working">YQ</span>
+        <span class="dead" title="Not working">YR</span>
+        <span class="dead" title="Not working">YS</span>
+        <span class="dead" title="Not working">YT</span>
+        <span class="dead" title="Not working">YU</span>
+        <span class="dead" title="Not working">YV</span>
+        <a href="https://survey.moontontech.net/t/5RV4YW" target="_blank" rel="noopener">YW</a>
+        <a href="https://survey.moontontech.net/t/5RV4YX" target="_blank" rel="noopener">YX</a>
+        <a href="https://survey.moontontech.net/t/5RV4YY" target="_blank" rel="noopener">YY</a>
+        <a href="https://survey.moontontech.net/t/5RV4YZ" target="_blank" rel="noopener">YZ</a>
+        <a href="https://survey.moontontech.net/t/5RV4Y0" target="_blank" rel="noopener">Y0</a>
+        <a href="https://survey.moontontech.net/t/5RV4Y1" target="_blank" rel="noopener">Y1</a>
+        <a href="https://survey.moontontech.net/t/5RV4Y2" target="_blank" rel="noopener">Y2</a>
+        <a href="https://survey.moontontech.net/t/5RV4Y3" target="_blank" rel="noopener">Y3</a>
+        <a href="https://survey.moontontech.net/t/5RV4Y4" target="_blank" rel="noopener">Y4</a>
+        <a href="https://survey.moontontech.net/t/5RV4Y5" target="_blank" rel="noopener">Y5</a>
+        <a href="https://survey.moontontech.net/t/5RV4Y6" target="_blank" rel="noopener">Y6</a>
+        <a href="https://survey.moontontech.net/t/5RV4Y7" target="_blank" rel="noopener">Y7</a>
+        <a href="https://survey.moontontech.net/t/5RV4Y8" target="_blank" rel="noopener">Y8</a>
+        <a href="https://survey.moontontech.net/t/5RV4Y9" target="_blank" rel="noopener">Y9</a>
       </div>
     </details>
     <details class="prefix-group" open data-prefix="5">
       <summary>
         <span class="badge badge-partial">61/62</span>
         <span class="prefix-label">Prefix <code>5</code></span>
-        <span class="link-count">61 links</span>
+        <span class="link-count">61 working / 1 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV45a" target="_blank" rel="noopener">5a</a>
@@ -224,6 +297,7 @@
         <a href="https://survey.moontontech.net/t/5RV45N" target="_blank" rel="noopener">5N</a>
         <a href="https://survey.moontontech.net/t/5RV45O" target="_blank" rel="noopener">5O</a>
         <a href="https://survey.moontontech.net/t/5RV45P" target="_blank" rel="noopener">5P</a>
+        <span class="dead" title="Not working">5Q</span>
         <a href="https://survey.moontontech.net/t/5RV45R" target="_blank" rel="noopener">5R</a>
         <a href="https://survey.moontontech.net/t/5RV45S" target="_blank" rel="noopener">5S</a>
         <a href="https://survey.moontontech.net/t/5RV45T" target="_blank" rel="noopener">5T</a>
@@ -245,30 +319,13 @@
         <a href="https://survey.moontontech.net/t/5RV459" target="_blank" rel="noopener">59</a>
       </div>
     </details>
-    <details class="prefix-group" open data-prefix="8">
-      <summary>
-        <span class="badge badge-partial">8/62</span>
-        <span class="prefix-label">Prefix <code>8</code></span>
-        <span class="link-count">8 links</span>
-      </summary>
-      <div class="links-grid">
-        <a href="https://survey.moontontech.net/t/5RV48a" target="_blank" rel="noopener">8a</a>
-        <a href="https://survey.moontontech.net/t/5RV48q" target="_blank" rel="noopener">8q</a>
-        <a href="https://survey.moontontech.net/t/5RV48r" target="_blank" rel="noopener">8r</a>
-        <a href="https://survey.moontontech.net/t/5RV48A" target="_blank" rel="noopener">8A</a>
-        <a href="https://survey.moontontech.net/t/5RV48R" target="_blank" rel="noopener">8R</a>
-        <a href="https://survey.moontontech.net/t/5RV48V" target="_blank" rel="noopener">8V</a>
-        <a href="https://survey.moontontech.net/t/5RV48Y" target="_blank" rel="noopener">8Y</a>
-        <a href="https://survey.moontontech.net/t/5RV485" target="_blank" rel="noopener">85</a>
-      </div>
-    </details>
 
   <div class="section-label full-section"><span class="dot" style="background:var(--muted)"></span> Full Prefixes &mdash; All 62/62 Active</div>
     <details class="prefix-group" data-prefix="a">
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>a</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4aa" target="_blank" rel="noopener">aa</a>
@@ -339,7 +396,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>b</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ba" target="_blank" rel="noopener">ba</a>
@@ -410,7 +467,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>c</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ca" target="_blank" rel="noopener">ca</a>
@@ -481,7 +538,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>d</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4da" target="_blank" rel="noopener">da</a>
@@ -552,7 +609,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>e</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ea" target="_blank" rel="noopener">ea</a>
@@ -623,7 +680,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>f</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4fa" target="_blank" rel="noopener">fa</a>
@@ -694,7 +751,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>g</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ga" target="_blank" rel="noopener">ga</a>
@@ -765,7 +822,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>h</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ha" target="_blank" rel="noopener">ha</a>
@@ -836,7 +893,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>i</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ia" target="_blank" rel="noopener">ia</a>
@@ -907,7 +964,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>j</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ja" target="_blank" rel="noopener">ja</a>
@@ -978,7 +1035,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>k</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ka" target="_blank" rel="noopener">ka</a>
@@ -1049,7 +1106,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>l</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4la" target="_blank" rel="noopener">la</a>
@@ -1120,7 +1177,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>m</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ma" target="_blank" rel="noopener">ma</a>
@@ -1191,7 +1248,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>n</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4na" target="_blank" rel="noopener">na</a>
@@ -1262,7 +1319,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>o</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4oa" target="_blank" rel="noopener">oa</a>
@@ -1333,7 +1390,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>p</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4pa" target="_blank" rel="noopener">pa</a>
@@ -1404,7 +1461,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>q</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4qa" target="_blank" rel="noopener">qa</a>
@@ -1475,7 +1532,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>r</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ra" target="_blank" rel="noopener">ra</a>
@@ -1546,7 +1603,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>s</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4sa" target="_blank" rel="noopener">sa</a>
@@ -1617,7 +1674,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>t</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ta" target="_blank" rel="noopener">ta</a>
@@ -1688,7 +1745,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>u</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ua" target="_blank" rel="noopener">ua</a>
@@ -1759,7 +1816,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>v</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4va" target="_blank" rel="noopener">va</a>
@@ -1830,7 +1887,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>w</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4wa" target="_blank" rel="noopener">wa</a>
@@ -1901,7 +1958,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>x</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4xa" target="_blank" rel="noopener">xa</a>
@@ -1972,7 +2029,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>y</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4ya" target="_blank" rel="noopener">ya</a>
@@ -2043,7 +2100,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>z</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4za" target="_blank" rel="noopener">za</a>
@@ -2114,7 +2171,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>A</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Aa" target="_blank" rel="noopener">Aa</a>
@@ -2185,7 +2242,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>B</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Ba" target="_blank" rel="noopener">Ba</a>
@@ -2256,7 +2313,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>C</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Ca" target="_blank" rel="noopener">Ca</a>
@@ -2327,7 +2384,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>D</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Da" target="_blank" rel="noopener">Da</a>
@@ -2398,7 +2455,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>E</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Ea" target="_blank" rel="noopener">Ea</a>
@@ -2469,7 +2526,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>F</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Fa" target="_blank" rel="noopener">Fa</a>
@@ -2540,7 +2597,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>G</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Ga" target="_blank" rel="noopener">Ga</a>
@@ -2611,7 +2668,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>I</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Ia" target="_blank" rel="noopener">Ia</a>
@@ -2682,7 +2739,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>J</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Ja" target="_blank" rel="noopener">Ja</a>
@@ -2753,7 +2810,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>L</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4La" target="_blank" rel="noopener">La</a>
@@ -2824,7 +2881,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>M</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Ma" target="_blank" rel="noopener">Ma</a>
@@ -2895,7 +2952,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>N</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Na" target="_blank" rel="noopener">Na</a>
@@ -2966,7 +3023,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>O</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Oa" target="_blank" rel="noopener">Oa</a>
@@ -3037,7 +3094,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>P</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Pa" target="_blank" rel="noopener">Pa</a>
@@ -3108,7 +3165,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>Q</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Qa" target="_blank" rel="noopener">Qa</a>
@@ -3179,7 +3236,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>R</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Ra" target="_blank" rel="noopener">Ra</a>
@@ -3250,7 +3307,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>S</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Sa" target="_blank" rel="noopener">Sa</a>
@@ -3321,7 +3378,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>U</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Ua" target="_blank" rel="noopener">Ua</a>
@@ -3392,7 +3449,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>V</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Va" target="_blank" rel="noopener">Va</a>
@@ -3463,7 +3520,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>W</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Wa" target="_blank" rel="noopener">Wa</a>
@@ -3534,7 +3591,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>X</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Xa" target="_blank" rel="noopener">Xa</a>
@@ -3601,82 +3658,11 @@
         <a href="https://survey.moontontech.net/t/5RV4X9" target="_blank" rel="noopener">X9</a>
       </div>
     </details>
-    <details class="prefix-group" data-prefix="Y">
-      <summary>
-        <span class="badge badge-full">62/62</span>
-        <span class="prefix-label">Prefix <code>Y</code></span>
-        <span class="link-count">62 links</span>
-      </summary>
-      <div class="links-grid">
-        <a href="https://survey.moontontech.net/t/5RV4Ya" target="_blank" rel="noopener">Ya</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yb" target="_blank" rel="noopener">Yb</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yc" target="_blank" rel="noopener">Yc</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yd" target="_blank" rel="noopener">Yd</a>
-        <a href="https://survey.moontontech.net/t/5RV4Ye" target="_blank" rel="noopener">Ye</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yf" target="_blank" rel="noopener">Yf</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yg" target="_blank" rel="noopener">Yg</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yh" target="_blank" rel="noopener">Yh</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yi" target="_blank" rel="noopener">Yi</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yj" target="_blank" rel="noopener">Yj</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yk" target="_blank" rel="noopener">Yk</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yl" target="_blank" rel="noopener">Yl</a>
-        <a href="https://survey.moontontech.net/t/5RV4Ym" target="_blank" rel="noopener">Ym</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yn" target="_blank" rel="noopener">Yn</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yo" target="_blank" rel="noopener">Yo</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yp" target="_blank" rel="noopener">Yp</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yq" target="_blank" rel="noopener">Yq</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yr" target="_blank" rel="noopener">Yr</a>
-        <a href="https://survey.moontontech.net/t/5RV4Ys" target="_blank" rel="noopener">Ys</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yt" target="_blank" rel="noopener">Yt</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yu" target="_blank" rel="noopener">Yu</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yv" target="_blank" rel="noopener">Yv</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yw" target="_blank" rel="noopener">Yw</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yx" target="_blank" rel="noopener">Yx</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yy" target="_blank" rel="noopener">Yy</a>
-        <a href="https://survey.moontontech.net/t/5RV4Yz" target="_blank" rel="noopener">Yz</a>
-        <a href="https://survey.moontontech.net/t/5RV4YA" target="_blank" rel="noopener">YA</a>
-        <a href="https://survey.moontontech.net/t/5RV4YB" target="_blank" rel="noopener">YB</a>
-        <a href="https://survey.moontontech.net/t/5RV4YC" target="_blank" rel="noopener">YC</a>
-        <a href="https://survey.moontontech.net/t/5RV4YD" target="_blank" rel="noopener">YD</a>
-        <a href="https://survey.moontontech.net/t/5RV4YE" target="_blank" rel="noopener">YE</a>
-        <a href="https://survey.moontontech.net/t/5RV4YF" target="_blank" rel="noopener">YF</a>
-        <a href="https://survey.moontontech.net/t/5RV4YG" target="_blank" rel="noopener">YG</a>
-        <a href="https://survey.moontontech.net/t/5RV4YH" target="_blank" rel="noopener">YH</a>
-        <a href="https://survey.moontontech.net/t/5RV4YI" target="_blank" rel="noopener">YI</a>
-        <a href="https://survey.moontontech.net/t/5RV4YJ" target="_blank" rel="noopener">YJ</a>
-        <a href="https://survey.moontontech.net/t/5RV4YK" target="_blank" rel="noopener">YK</a>
-        <a href="https://survey.moontontech.net/t/5RV4YL" target="_blank" rel="noopener">YL</a>
-        <a href="https://survey.moontontech.net/t/5RV4YM" target="_blank" rel="noopener">YM</a>
-        <a href="https://survey.moontontech.net/t/5RV4YN" target="_blank" rel="noopener">YN</a>
-        <a href="https://survey.moontontech.net/t/5RV4YO" target="_blank" rel="noopener">YO</a>
-        <a href="https://survey.moontontech.net/t/5RV4YP" target="_blank" rel="noopener">YP</a>
-        <a href="https://survey.moontontech.net/t/5RV4YQ" target="_blank" rel="noopener">YQ</a>
-        <a href="https://survey.moontontech.net/t/5RV4YR" target="_blank" rel="noopener">YR</a>
-        <a href="https://survey.moontontech.net/t/5RV4YS" target="_blank" rel="noopener">YS</a>
-        <a href="https://survey.moontontech.net/t/5RV4YT" target="_blank" rel="noopener">YT</a>
-        <a href="https://survey.moontontech.net/t/5RV4YU" target="_blank" rel="noopener">YU</a>
-        <a href="https://survey.moontontech.net/t/5RV4YV" target="_blank" rel="noopener">YV</a>
-        <a href="https://survey.moontontech.net/t/5RV4YW" target="_blank" rel="noopener">YW</a>
-        <a href="https://survey.moontontech.net/t/5RV4YX" target="_blank" rel="noopener">YX</a>
-        <a href="https://survey.moontontech.net/t/5RV4YY" target="_blank" rel="noopener">YY</a>
-        <a href="https://survey.moontontech.net/t/5RV4YZ" target="_blank" rel="noopener">YZ</a>
-        <a href="https://survey.moontontech.net/t/5RV4Y0" target="_blank" rel="noopener">Y0</a>
-        <a href="https://survey.moontontech.net/t/5RV4Y1" target="_blank" rel="noopener">Y1</a>
-        <a href="https://survey.moontontech.net/t/5RV4Y2" target="_blank" rel="noopener">Y2</a>
-        <a href="https://survey.moontontech.net/t/5RV4Y3" target="_blank" rel="noopener">Y3</a>
-        <a href="https://survey.moontontech.net/t/5RV4Y4" target="_blank" rel="noopener">Y4</a>
-        <a href="https://survey.moontontech.net/t/5RV4Y5" target="_blank" rel="noopener">Y5</a>
-        <a href="https://survey.moontontech.net/t/5RV4Y6" target="_blank" rel="noopener">Y6</a>
-        <a href="https://survey.moontontech.net/t/5RV4Y7" target="_blank" rel="noopener">Y7</a>
-        <a href="https://survey.moontontech.net/t/5RV4Y8" target="_blank" rel="noopener">Y8</a>
-        <a href="https://survey.moontontech.net/t/5RV4Y9" target="_blank" rel="noopener">Y9</a>
-      </div>
-    </details>
     <details class="prefix-group" data-prefix="Z">
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>Z</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV4Za" target="_blank" rel="noopener">Za</a>
@@ -3747,7 +3733,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>0</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV40a" target="_blank" rel="noopener">0a</a>
@@ -3818,7 +3804,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>1</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV41a" target="_blank" rel="noopener">1a</a>
@@ -3889,7 +3875,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>2</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV42a" target="_blank" rel="noopener">2a</a>
@@ -3960,7 +3946,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>3</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV43a" target="_blank" rel="noopener">3a</a>
@@ -4031,7 +4017,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>4</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV44a" target="_blank" rel="noopener">4a</a>
@@ -4102,7 +4088,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>6</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV46a" target="_blank" rel="noopener">6a</a>
@@ -4173,7 +4159,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>7</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV47a" target="_blank" rel="noopener">7a</a>
@@ -4244,7 +4230,7 @@
       <summary>
         <span class="badge badge-full">62/62</span>
         <span class="prefix-label">Prefix <code>9</code></span>
-        <span class="link-count">62 links</span>
+        <span class="link-count">62 working / 0 dead</span>
       </summary>
       <div class="links-grid">
         <a href="https://survey.moontontech.net/t/5RV49a" target="_blank" rel="noopener">9a</a>
@@ -4317,18 +4303,213 @@
       <summary>
         <span class="badge badge-dead">0/62</span>
         <span class="prefix-label">Prefix <code>K</code></span>
-        <span class="link-count">0 links</span>
+        <span class="link-count">0 working / 62 dead</span>
       </summary>
       <div class="links-grid">
+        <span class="dead" title="Not working">Ka</span>
+        <span class="dead" title="Not working">Kb</span>
+        <span class="dead" title="Not working">Kc</span>
+        <span class="dead" title="Not working">Kd</span>
+        <span class="dead" title="Not working">Ke</span>
+        <span class="dead" title="Not working">Kf</span>
+        <span class="dead" title="Not working">Kg</span>
+        <span class="dead" title="Not working">Kh</span>
+        <span class="dead" title="Not working">Ki</span>
+        <span class="dead" title="Not working">Kj</span>
+        <span class="dead" title="Not working">Kk</span>
+        <span class="dead" title="Not working">Kl</span>
+        <span class="dead" title="Not working">Km</span>
+        <span class="dead" title="Not working">Kn</span>
+        <span class="dead" title="Not working">Ko</span>
+        <span class="dead" title="Not working">Kp</span>
+        <span class="dead" title="Not working">Kq</span>
+        <span class="dead" title="Not working">Kr</span>
+        <span class="dead" title="Not working">Ks</span>
+        <span class="dead" title="Not working">Kt</span>
+        <span class="dead" title="Not working">Ku</span>
+        <span class="dead" title="Not working">Kv</span>
+        <span class="dead" title="Not working">Kw</span>
+        <span class="dead" title="Not working">Kx</span>
+        <span class="dead" title="Not working">Ky</span>
+        <span class="dead" title="Not working">Kz</span>
+        <span class="dead" title="Not working">KA</span>
+        <span class="dead" title="Not working">KB</span>
+        <span class="dead" title="Not working">KC</span>
+        <span class="dead" title="Not working">KD</span>
+        <span class="dead" title="Not working">KE</span>
+        <span class="dead" title="Not working">KF</span>
+        <span class="dead" title="Not working">KG</span>
+        <span class="dead" title="Not working">KH</span>
+        <span class="dead" title="Not working">KI</span>
+        <span class="dead" title="Not working">KJ</span>
+        <span class="dead" title="Not working">KK</span>
+        <span class="dead" title="Not working">KL</span>
+        <span class="dead" title="Not working">KM</span>
+        <span class="dead" title="Not working">KN</span>
+        <span class="dead" title="Not working">KO</span>
+        <span class="dead" title="Not working">KP</span>
+        <span class="dead" title="Not working">KQ</span>
+        <span class="dead" title="Not working">KR</span>
+        <span class="dead" title="Not working">KS</span>
+        <span class="dead" title="Not working">KT</span>
+        <span class="dead" title="Not working">KU</span>
+        <span class="dead" title="Not working">KV</span>
+        <span class="dead" title="Not working">KW</span>
+        <span class="dead" title="Not working">KX</span>
+        <span class="dead" title="Not working">KY</span>
+        <span class="dead" title="Not working">KZ</span>
+        <span class="dead" title="Not working">K0</span>
+        <span class="dead" title="Not working">K1</span>
+        <span class="dead" title="Not working">K2</span>
+        <span class="dead" title="Not working">K3</span>
+        <span class="dead" title="Not working">K4</span>
+        <span class="dead" title="Not working">K5</span>
+        <span class="dead" title="Not working">K6</span>
+        <span class="dead" title="Not working">K7</span>
+        <span class="dead" title="Not working">K8</span>
+        <span class="dead" title="Not working">K9</span>
       </div>
     </details>
     <details class="prefix-group" data-prefix="T">
       <summary>
         <span class="badge badge-dead">0/62</span>
         <span class="prefix-label">Prefix <code>T</code></span>
-        <span class="link-count">0 links</span>
+        <span class="link-count">0 working / 62 dead</span>
       </summary>
       <div class="links-grid">
+        <span class="dead" title="Not working">Ta</span>
+        <span class="dead" title="Not working">Tb</span>
+        <span class="dead" title="Not working">Tc</span>
+        <span class="dead" title="Not working">Td</span>
+        <span class="dead" title="Not working">Te</span>
+        <span class="dead" title="Not working">Tf</span>
+        <span class="dead" title="Not working">Tg</span>
+        <span class="dead" title="Not working">Th</span>
+        <span class="dead" title="Not working">Ti</span>
+        <span class="dead" title="Not working">Tj</span>
+        <span class="dead" title="Not working">Tk</span>
+        <span class="dead" title="Not working">Tl</span>
+        <span class="dead" title="Not working">Tm</span>
+        <span class="dead" title="Not working">Tn</span>
+        <span class="dead" title="Not working">To</span>
+        <span class="dead" title="Not working">Tp</span>
+        <span class="dead" title="Not working">Tq</span>
+        <span class="dead" title="Not working">Tr</span>
+        <span class="dead" title="Not working">Ts</span>
+        <span class="dead" title="Not working">Tt</span>
+        <span class="dead" title="Not working">Tu</span>
+        <span class="dead" title="Not working">Tv</span>
+        <span class="dead" title="Not working">Tw</span>
+        <span class="dead" title="Not working">Tx</span>
+        <span class="dead" title="Not working">Ty</span>
+        <span class="dead" title="Not working">Tz</span>
+        <span class="dead" title="Not working">TA</span>
+        <span class="dead" title="Not working">TB</span>
+        <span class="dead" title="Not working">TC</span>
+        <span class="dead" title="Not working">TD</span>
+        <span class="dead" title="Not working">TE</span>
+        <span class="dead" title="Not working">TF</span>
+        <span class="dead" title="Not working">TG</span>
+        <span class="dead" title="Not working">TH</span>
+        <span class="dead" title="Not working">TI</span>
+        <span class="dead" title="Not working">TJ</span>
+        <span class="dead" title="Not working">TK</span>
+        <span class="dead" title="Not working">TL</span>
+        <span class="dead" title="Not working">TM</span>
+        <span class="dead" title="Not working">TN</span>
+        <span class="dead" title="Not working">TO</span>
+        <span class="dead" title="Not working">TP</span>
+        <span class="dead" title="Not working">TQ</span>
+        <span class="dead" title="Not working">TR</span>
+        <span class="dead" title="Not working">TS</span>
+        <span class="dead" title="Not working">TT</span>
+        <span class="dead" title="Not working">TU</span>
+        <span class="dead" title="Not working">TV</span>
+        <span class="dead" title="Not working">TW</span>
+        <span class="dead" title="Not working">TX</span>
+        <span class="dead" title="Not working">TY</span>
+        <span class="dead" title="Not working">TZ</span>
+        <span class="dead" title="Not working">T0</span>
+        <span class="dead" title="Not working">T1</span>
+        <span class="dead" title="Not working">T2</span>
+        <span class="dead" title="Not working">T3</span>
+        <span class="dead" title="Not working">T4</span>
+        <span class="dead" title="Not working">T5</span>
+        <span class="dead" title="Not working">T6</span>
+        <span class="dead" title="Not working">T7</span>
+        <span class="dead" title="Not working">T8</span>
+        <span class="dead" title="Not working">T9</span>
+      </div>
+    </details>
+    <details class="prefix-group" data-prefix="8">
+      <summary>
+        <span class="badge badge-dead">0/62</span>
+        <span class="prefix-label">Prefix <code>8</code></span>
+        <span class="link-count">0 working / 62 dead</span>
+      </summary>
+      <div class="links-grid">
+        <span class="dead" title="Not working">8a</span>
+        <span class="dead" title="Not working">8b</span>
+        <span class="dead" title="Not working">8c</span>
+        <span class="dead" title="Not working">8d</span>
+        <span class="dead" title="Not working">8e</span>
+        <span class="dead" title="Not working">8f</span>
+        <span class="dead" title="Not working">8g</span>
+        <span class="dead" title="Not working">8h</span>
+        <span class="dead" title="Not working">8i</span>
+        <span class="dead" title="Not working">8j</span>
+        <span class="dead" title="Not working">8k</span>
+        <span class="dead" title="Not working">8l</span>
+        <span class="dead" title="Not working">8m</span>
+        <span class="dead" title="Not working">8n</span>
+        <span class="dead" title="Not working">8o</span>
+        <span class="dead" title="Not working">8p</span>
+        <span class="dead" title="Not working">8q</span>
+        <span class="dead" title="Not working">8r</span>
+        <span class="dead" title="Not working">8s</span>
+        <span class="dead" title="Not working">8t</span>
+        <span class="dead" title="Not working">8u</span>
+        <span class="dead" title="Not working">8v</span>
+        <span class="dead" title="Not working">8w</span>
+        <span class="dead" title="Not working">8x</span>
+        <span class="dead" title="Not working">8y</span>
+        <span class="dead" title="Not working">8z</span>
+        <span class="dead" title="Not working">8A</span>
+        <span class="dead" title="Not working">8B</span>
+        <span class="dead" title="Not working">8C</span>
+        <span class="dead" title="Not working">8D</span>
+        <span class="dead" title="Not working">8E</span>
+        <span class="dead" title="Not working">8F</span>
+        <span class="dead" title="Not working">8G</span>
+        <span class="dead" title="Not working">8H</span>
+        <span class="dead" title="Not working">8I</span>
+        <span class="dead" title="Not working">8J</span>
+        <span class="dead" title="Not working">8K</span>
+        <span class="dead" title="Not working">8L</span>
+        <span class="dead" title="Not working">8M</span>
+        <span class="dead" title="Not working">8N</span>
+        <span class="dead" title="Not working">8O</span>
+        <span class="dead" title="Not working">8P</span>
+        <span class="dead" title="Not working">8Q</span>
+        <span class="dead" title="Not working">8R</span>
+        <span class="dead" title="Not working">8S</span>
+        <span class="dead" title="Not working">8T</span>
+        <span class="dead" title="Not working">8U</span>
+        <span class="dead" title="Not working">8V</span>
+        <span class="dead" title="Not working">8W</span>
+        <span class="dead" title="Not working">8X</span>
+        <span class="dead" title="Not working">8Y</span>
+        <span class="dead" title="Not working">8Z</span>
+        <span class="dead" title="Not working">80</span>
+        <span class="dead" title="Not working">81</span>
+        <span class="dead" title="Not working">82</span>
+        <span class="dead" title="Not working">83</span>
+        <span class="dead" title="Not working">84</span>
+        <span class="dead" title="Not working">85</span>
+        <span class="dead" title="Not working">86</span>
+        <span class="dead" title="Not working">87</span>
+        <span class="dead" title="Not working">88</span>
+        <span class="dead" title="Not working">89</span>
       </div>
     </details>
 
@@ -4336,7 +4517,7 @@
 </main>
 
 <footer>
-  Auto-updated by GitHub Actions &nbsp;&middot;&nbsp; <strong>5RV4</strong> survey link space &nbsp;&middot;&nbsp; Last scan: 2026-05-19 09:49 UTC
+  Auto-updated by GitHub Actions &nbsp;&middot;&nbsp; <strong>5RV4</strong> survey link space &nbsp;&middot;&nbsp; Last scan: 2026-05-19 09:46 UTC
 </footer>
 
 <script>
