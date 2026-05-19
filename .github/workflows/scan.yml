@@ -2,8 +2,8 @@ name: Scan & Deploy
 
 on:
   schedule:
-    # Runs every day at 06:00 UTC
-    - cron: "0 6 * * *"
+    # Runs every at 5 minutes
+    - cron: "*/5 * * * *"
   workflow_dispatch:   # lets you trigger it manually from the GitHub UI too
 
 permissions:
