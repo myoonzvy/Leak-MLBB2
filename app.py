@@ -1,4 +1,3 @@
-import html
 import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -12,5 +11,6 @@ ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 RESULTS_FILE = Path("results.json")
 WORKERS = 16
 
-REQUEST_HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 Chrome/125.0 Mobile Safari/537
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 Chrome/125 Safari/537.36",
+    "Accept": "text/html,application
