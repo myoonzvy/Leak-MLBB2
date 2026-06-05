@@ -24,7 +24,6 @@ st.markdown(
     --bg: #010001;
     --panel: #10191d;
     --teal: #367D8A;
-    --teal-dark: #285F6B;
     --text: #FFFFFF;
     --muted: #7d8a99;
     --green-bg: #0d3026;
@@ -363,6 +362,8 @@ def build_groups(results):
 
 if "results" not in st.session_state:
     st.session_state.results = load_saved_results()
+
+if "result_source" not in st.session_state:
     st.session_state.result_source = "Saved results.json"
 
 st.markdown(
