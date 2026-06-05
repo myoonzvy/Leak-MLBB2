@@ -11,6 +11,10 @@ ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 RESULTS_FILE = Path("results.json")
 WORKERS = 16
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 Chrome/125 Safari/537.36",
-    "Accept": "text/html,application
+st.set_page_config(page_title=f"{TITLE_CODE} Survey Scanner", page_icon="🔎", layout="wide")
+
+st.markdown("""
+<style>
+.stApp { background: #010001; color: white; }
+a { text-decoration: none !important; }
+.code-grid { display
