@@ -6,7 +6,7 @@ from pathlib import Path
 import requests
 import streamlit as st
 
-BASE_URL = "https://survey.moontontech.net/t/5RVc"
+BASE_URL = "https://survey.moontontech.net/t/5RVE"
 ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 RESULTS_FILE = Path("results.json")
 WORKERS = 16
