@@ -370,7 +370,7 @@ st.markdown(
     """
 <div class="hero">
   <div class="hero-kicker">Survey Link Viewer</div>
-  <h1 class="hero-title">5RVc Survey<br>Scanner</h1>
+  <h1 class="hero-title">5RVE Survey<br>Scanner</h1>
   <div class="hero-subtitle">Active and inactive survey links, grouped by prefix.</div>
 </div>
 """,
