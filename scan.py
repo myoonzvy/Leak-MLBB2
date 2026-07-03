@@ -1,6 +1,6 @@
 """
 scan.py — headless scanner for GitHub Actions.
-Scans all 5RV4?? URLs and writes results.json
+Scans all 5RVE?? URLs and writes results.json
 """
 import json
 import re
