@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
-BASE_URL = "https://survey.moontontech.net/t/5RVE"
+BASE_URL = "https://survey.moontontech.net/t/5RVL"
 ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 RESULTS_FILE = "results.json"
 
