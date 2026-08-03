@@ -11,8 +11,8 @@ ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 RESULTS_FILE = Path("results.json")
 WORKERS = 16
 
-st.set_page_config(
-    page_title="5RVE Survey Link Scanner",
+st.set_page_config
+    page_title="5RVL Survey Link Scanner🔍",
     page_icon="🔎",
     layout="wide",
 )
