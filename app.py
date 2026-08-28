@@ -6,13 +6,13 @@ from pathlib import Path
 import requests
 import streamlit as st
 
-BASE_URL = "https://survey.moontontech.net/t/5RVL"
+BASE_URL = "https://survey.moontontech.net/t/5RV3"
 ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 RESULTS_FILE = Path("results.json")
 WORKERS = 16
 
 st.set_page_config(
-    page_title="5RVL Survey Link Scanner🔍",
+    page_title="5R3 Survey Link Scanner🔍",
     page_icon="🔎",
     layout="wide",
 )
