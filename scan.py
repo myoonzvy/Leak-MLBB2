@@ -204,7 +204,7 @@ def build_html(results):
     <div class="header-tag">Survey Link Scanner</div>
     <h1>Active Links &mdash; <span>5RV4??</span></h1>
     <div class="header-meta">
-      <span>Base URL: <a href="https://survey.moontontech.net/t/5RV4" target="_blank" rel="noopener">survey.moontontech.net/t/5RV4</a></span>
+      <span>Base URL: <a href="https://survey.moontontech.net/t/5RV3" target="_blank" rel="noopener">survey.moontontech.net/t/5RV3</a></span>
       <span class="stat-pill">&#10004; <span class="num">{total_good:,}</span>&nbsp;working out of 3,844 scanned</span>
       <span class="updated-pill">&#128336; Last scan: {now}</span>
     </div>
