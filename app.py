@@ -12,7 +12,7 @@ RESULTS_FILE = Path("results.json")
 WORKERS = 16
 
 st.set_page_config(
-    page_title="5R3 Survey Link Scanner🔍",
+    page_title="5RV3 Survey Link Scanner🔍",
     page_icon="🔎",
     layout="wide",
 )
@@ -370,7 +370,7 @@ st.markdown(
     """
 <div class="hero">
   <div class="hero-kicker">Survey Link Viewer</div>
-  <h1 class="hero-title">5RVL Survey<br>Scanner</h1>
+  <h1 class="hero-title">5RV3 Survey<br>Scanner</h1>
   <div class="hero-subtitle">Active and inactive survey links, grouped by prefix.</div>
 </div>
 """,
