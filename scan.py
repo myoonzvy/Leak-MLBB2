@@ -1,6 +1,6 @@
 """
 scan.py — headless scanner for GitHub Actions.
-Scans all 5RVE?? URLs and writes results.json
+Scans all 5RV3?? URLs and writes results.json
 """
 import json
 import re
@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
-BASE_URL = "https://survey.moontontech.net/t/5RVL"
+BASE_URL = "https://survey.moontontech.net/t/5RV3"
 ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 RESULTS_FILE = "results.json"
 
