@@ -1,6 +1,6 @@
 """
 scan.py — headless scanner for GitHub Actions.
-Scans all 5RV3?? URLs and writes results.json
+Scans all 5RVk?? URLs and writes results.json
 """
 import json
 import re
@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
-BASE_URL = "https://survey.moontontech.net/t/5RV3"
+BASE_URL = "https://survey.moontontech.net/t/5RVk"
 ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 RESULTS_FILE = "results.json"
 
@@ -133,7 +133,7 @@ def build_html(results):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>5RV4 Survey &mdash; Active Links</title>
+<title>5RVk Survey &mdash; Active Links</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -202,9 +202,9 @@ def build_html(results):
 <header>
   <div class="header-inner">
     <div class="header-tag">Survey Link Scanner</div>
-    <h1>Active Links &mdash; <span>5RV4??</span></h1>
+    <h1>Active Links &mdash; <span>5RVk??</span></h1>
     <div class="header-meta">
-      <span>Base URL: <a href="https://survey.moontontech.net/t/5RV3" target="_blank" rel="noopener">survey.moontontech.net/t/5RV3</a></span>
+      <span>Base URL: <a href="https://survey.moontontech.net/t/5RVk" target="_blank" rel="noopener">survey.moontontech.net/t/5RVk</a></span>
       <span class="stat-pill">&#10004; <span class="num">{total_good:,}</span>&nbsp;working out of 3,844 scanned</span>
       <span class="updated-pill">&#128336; Last scan: {now}</span>
     </div>
