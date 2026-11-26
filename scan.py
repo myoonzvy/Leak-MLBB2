@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
-BASE_URL = "https://survey.moontontech.net/t/5RVW"
+BASE_URL = "https://survey.moontontech.net/t/5RVh"
 ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 RESULTS_FILE = "results.json"
 
@@ -204,7 +204,7 @@ def build_html(results):
     <div class="header-tag">Survey Link Scanner</div>
     <h1>Active Links &mdash; <span>5RVW??</span></h1>
     <div class="header-meta">
-      <span>Base URL: <a href="https://survey.moontontech.net/t/5RVW" target="_blank" rel="noopener">survey.moontontech.net/t/5RVW</a></span>
+      <span>Base URL: <a href="https://survey.moontontech.net/t/5RVh" target="_blank" rel="noopener">survey.moontontech.net/t/5RVh</a></span>
       <span class="stat-pill">&#10004; <span class="num">{total_good:,}</span>&nbsp;working out of 3,844 scanned</span>
       <span class="updated-pill">&#128336; Last scan: {now}</span>
     </div>
